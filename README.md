@@ -10,6 +10,7 @@ Mini project for DRF practise:
 #### Preparation phase:
 ```
  - Install Django and DRF
+
  - Setup Django project
    djangoadmin startproject myste .
 
@@ -32,3 +33,37 @@ Mini project for DRF practise:
  - Register new model in Admin area
    admin.site.register(Posts)
 ```
+
+
+
+#
+
+#### DRF API:
+```
+   A. SERIALIZER
+   B. CLASS-BASED VIEW
+   C. URL LINKING (ROUTER)
+
+A)
+ - Telling to DRF about the model and how should serialize the data.
+   CREATE SERIALIZER: DB <-> SERIALIZER <-> VIEW 
+   serializer.py
+   DRF has set of serializers
+   here, there is used 'serializers.HyperlinkedModelSerializer'
+
+B)
+ - Creating class-based view
+   here, there is used DRF provided class-based view: 'viewsets.ModelViewSet':
+
+C) 
+ - Url linking
+   mysite.urls
+   drf_api.urls
+       creating default router
+           it auto-generates documentation and endpoints to ViewSets
+```
+
+
+#
+
+#### Django single-endpoint app showing DRF-API data
